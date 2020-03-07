@@ -1,4 +1,5 @@
 <h3>Sign Up</h3>
+<p><%="Username and password can't be empty" if @user && @user.errors.any?%></p>
 <form action="/signup" method="POST">
   <input type="text" name="username" placeholder="Username:">
   <input type="password" name="password" placeholder="Password:">
