@@ -1,0 +1,9 @@
+<h1>Welcome <%=@user.username%></h1>
+
+<h2>Your Balance is $<%=@user.balance%></h2>
+<form action="/withdraw" method="post">
+  <h4><input type="integer" name="withdrawal_amount"></h4>
+  <p><input type="submit" value="Withdraw"></p>
+</form>
+
+<p><a href="/account">My Account</a> | <a href="/deposit">Deposit Funds</a> | <a href="/logout">Log Out</a></p>
